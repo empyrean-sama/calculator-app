@@ -11,11 +11,14 @@ function handleInput(ev: Event) {
                 const symbols = display.textContent?.trim().split(" ") as string[];
                 display.textContent = "";
                 const lastSymbol = symbols.pop();
-                if(lastSymbol?.split("").length || 0 > 1) {
-                    const cleaning = lastSymbol?.split("");
-                    cleaning?.pop();
-                    symbols.push(cleaning?.join("") || "");
+                
+                // If the last symbol is a number (with or without decimal), remove only the last entered one character
+                const lastSymbolArr = lastSymbol?.split("") || [];
+                if(lastSymbolArr.length > 1) {
+                    lastSymbolArr.pop();
+                    symbols.push(lastSymbolArr.join(""));
                 }
+                
                 symbols.forEach((symbol: string) => {
                     if(symbol === "+" || symbol === "-" || symbol === "/" || symbol === "x") {
                         display.textContent = display.textContent + " " + symbol + " ";
@@ -44,6 +47,13 @@ function handleInput(ev: Event) {
                 if(symbol !== '+' && symbol !== '-' && symbol !== 'x' && symbol !== '/') {
                     display.textContent = display.textContent + " " + instruction + " ";
                 }
+            }
+            break;
+        case ".":
+            const symbols = display.textContent?.trim().split(" ");
+            const lastSymbol = symbols?.pop() as string;
+            if(!lastSymbol.split("").includes('.')) {
+                display.textContent += '.';
             }
             break;
         default:
