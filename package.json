@@ -7,6 +7,10 @@
     "build": "parcel build"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.4",
     "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "include-media": "^2.0.0"
   }
 }
