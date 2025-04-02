@@ -2,9 +2,10 @@
 ## Live Site - https://calculator-sriveer.netlify.app/
 
 ### Features
-- Fully Responsive Web App
-- Remembers the chosen theme for the next time when this site is opened
-- No Fancy Frameworks,everything written using pure browser API's for easy portability
+- Fully Responsive Web App.
+- Can choose one of the three provided themes or create a new one by overriding the _themes.scss file found inside.
+- Remembers which chosen theme to show for the next time when this site is opened.
+- No Fancy Frameworks,everything written using pure browser API's for easy portability.
 
 Design Inspiration from FrontEndMentor.com
 
