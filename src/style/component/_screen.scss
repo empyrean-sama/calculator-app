@@ -1,0 +1,14 @@
+.screen {
+    font-size: var(--text-size);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    max-width: var(--max-width);
+    margin: auto;
+    padding: var(--gap);
+
+    background-color: var(--screen-background-color);
+    color: var(--text-color-furnishings);
+    border-radius: var(--border-radius);
+}

@@ -1,3 +1,13 @@
 @use 'include-media/dist/include-media' as *;
 @use './style/reset' as *;
 @use './style/variables' as *;
+@use './style/theme' as *;
+
+@use './style/component/header';
+@use './style/component/btn';
+@use './style/component/button-area.scss';
+@use './style/component/screen.scss';
+
+body {
+    background-color: var(--empty-background-color);
+}

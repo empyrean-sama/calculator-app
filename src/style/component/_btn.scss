@@ -1,0 +1,37 @@
+.btn {
+    transition: all .1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: var(--text-size);
+
+    justify-items: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+}
+
+.btn:hover {
+    filter: brightness(110%);
+}
+
+.btn:active {
+    transform: scaleY(.9) translateY(5px);
+}
+
+.btn-key {
+    color: var(--text-color-keys);
+    background-color: var(--key-background-color);
+    box-shadow: inset 0px -7px var(--key-shadow-color);
+}
+
+.btn-del-key {
+    color: var(--text-color-del-keys);
+    background-color: var(--del-key-background-color);
+    box-shadow: inset 0px -7px var(--del-key-shadow-color);
+}
+
+.btn-action-key {
+    color: var(--text-color-action-keys);
+    background-color: var(--action-key-background-color);
+    box-shadow: inset 0px -7px var(--action-key-shadow-color);
+}

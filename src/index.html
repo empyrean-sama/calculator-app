@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="basic">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +21,19 @@
         <div class="theme-selector-box">
             <h2>theme</h2>
             <div class="theme-selector-component">
-                <div class="theme-selection-numbers">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
+                <div class="theme-selection">
+                    <label>
+                        <span class="theme-text">1</span>
+                        <input type="radio" name="theme-selection" data-theme="dark">
+                    </label>
+                    <label>
+                        <span class="theme-text">2</span>
+                        <input type="radio" name="theme-selection" data-theme="light">
+                    </label>
+                    <label>
+                        <span class="theme-text">3</span>
+                        <input type="radio" name="theme-selection" data-theme="cyberpunk">
+                    </label>
                 </div>
                 <div class="theme-selection-field">
                     <div class="theme-selection-ball"></div>
@@ -33,7 +42,7 @@
         </div>
     </header>
     <main>
-        <div class="screen" id="screen"></div>
+        <div class="screen" id="screen">321,000</div>
         <div class="button-area">
             <a href="javascript:void(0)" class="btn btn-key">7</a>
             <a href="javascript:void(0)" class="btn btn-key">8</a>

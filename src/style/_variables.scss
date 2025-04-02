@@ -1,0 +1,18 @@
+@use 'include-media/dist/include-media' as *;
+
+:root {
+    --max-width: 370px;
+    --gap: 12px;
+    --text-size: 32px;
+    --border-radius: 5px;
+    @include media(">=tablet") {
+        --max-width: 450px;
+        --gap: 18px;
+        --text-size: 35px;
+    }
+    @include media(">=desktop") {
+        --max-width: 750px;
+        --gap: 24px;
+        --text-size: 40px;
+    }
+}

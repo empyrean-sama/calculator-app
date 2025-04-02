@@ -1,0 +1,22 @@
+@use 'include-media/dist/include-media' as *;
+
+.button-area {
+    display: grid;
+    grid-template-rows   : repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    
+    padding: var(--gap);
+    margin: auto;
+    margin-top: var(--gap);
+    
+    max-width: var(--max-width);
+    font-size: var(--text-size);
+    gap: var(--gap);
+
+    background-color: var(--toggle-background-color);
+    border-radius: var(--border-radius);
+}
+
+.span-grid-two {
+    grid-column: span 2;
+}
