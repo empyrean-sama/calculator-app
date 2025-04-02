@@ -1,3 +1,5 @@
+@use 'include-media/dist/include-media' as *;
+
 .btn {
     transition: all .1s ease-in-out;
     display: flex;
@@ -8,6 +10,10 @@
     justify-items: center;
     align-items: center;
     border-radius: var(--border-radius);
+
+    @include media("<=desktop") {
+        padding: var(--gap);
+    }
 }
 
 .btn:hover {

@@ -11,7 +11,7 @@
         --text-size: 35px;
     }
     @include media(">=desktop") {
-        --max-width: 750px;
+        --max-width: 600px;
         --gap: 24px;
         --text-size: 40px;
     }

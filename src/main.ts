@@ -1,5 +1,4 @@
 const display = document.getElementById('screen') as HTMLDivElement;
-
 function handleInput(ev: Event) {
     const instruction: string = (ev.target as HTMLLinkElement).dataset['value'] as string;
     switch(instruction) {
