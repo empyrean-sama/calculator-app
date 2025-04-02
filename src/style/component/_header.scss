@@ -34,7 +34,8 @@ header {
 
     .theme-selection-field {
         position: relative;
-
+        cursor: pointer;
+        
         height: 24px;
         width: 80px;
         background-color: var(--toggle-background-color);
